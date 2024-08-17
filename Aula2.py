@@ -1,3 +1,6 @@
+# Este trecho de código está executando a multiplicação da matriz em Python usando o Numpy.Define duas matrizes
+# então cria pandas dados de dados `df_a`,` df_b` e `df_prod` para exibir as matrizes e suas
+# produto de maneira formatada.
 # %% Produto de Matrizes em Python
 
 import numpy as np
@@ -13,6 +16,7 @@ df_prod = pd.DataFrame(prod)
 
 print(f"O produto de \n\n{df_A}\n\nvezes\n\n{df_B}\n\né igual à:\n\n{df_prod}")
 
+# Este trecho de código está calculando o determinante de uma matriz em Python usando a biblioteca Numpy.
 # %% Cálculo de determinante no Python
 
 import numpy as np
@@ -31,6 +35,7 @@ print(
     f"\n\nOu preferes assim:\n\nA determinante de\n\n{B2}\n\né\n\n{determinante}\n\n(Desta forma é sem utilizar a biblioteca pandas)"
 )
 
+# O trecho de código que você forneceu está executando a multiplicação da matriz em Python usando o Numpy.
 # %% Produto de Matrizes em Python
 
 A = np.array([[1, -3, 4], [3, 6, 9], [-1, 5, 4]])
