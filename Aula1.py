@@ -29,11 +29,14 @@ B = np.array([[3, 4, -1], [5, -1, 5], [4, 6, 5]])
 
 # Soma as duas matrizes
 C = A + B
+# Converte as matrizes originais em um DataFrame para visualização
+df_A = pd.DataFrame(A)
+df_BB = pd.DataFrame(B)
 
 # Converte a matriz resultante da soma em um DataFrame para visualização
 df_C = pd.DataFrame(C)
 
 # Imprime a matriz resultante da soma
-print(df_C)
+print(f"A soma de \n\n{df_A}\n\n + \n\n{df_BB}\n\n é igual a \n\n{df_C}")
 
 # %%
