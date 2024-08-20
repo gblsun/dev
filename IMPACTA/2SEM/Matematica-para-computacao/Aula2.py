@@ -50,8 +50,7 @@ A3=np.array([[1,-3,4],
             [3,6,9],
             [-1,5,4]])
 df_A3=pd.DataFrame(A3)
-
 inversa =np.linalg.inv(A3)
 df_inversa=pd.DataFrame(inversa)
 print(f'A inversa da matriz: \n\n{df_A3}\n\n é {df_inversa}')
-# %%
+# %% ---end
