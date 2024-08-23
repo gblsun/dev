@@ -1,5 +1,6 @@
 # Aula 6: técnicas de programação IMPACTA 23 de Agosto de 2024
 # Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)
+
 # %% --begin
 
 # Recursividade
