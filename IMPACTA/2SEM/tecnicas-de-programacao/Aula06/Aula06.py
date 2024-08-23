@@ -59,6 +59,7 @@ print(total)
 # problema: 1! = 1
 
 # %% Função recursiva
+
 # Meu exercício
 # Função
 def fatorial(valor):
@@ -83,4 +84,15 @@ def fatorial(n):
         return 1
     else:
         return n * fatorial(n-1) # chamada recursiva
+    
+    
+# %%
+# Estrutura de dicionario aninhado
+# ------Estrutura Json?
+
+# {
+#     <chave>:{
+#         <chave2>:<valor>
+#     }
+# }
 # %% --end
