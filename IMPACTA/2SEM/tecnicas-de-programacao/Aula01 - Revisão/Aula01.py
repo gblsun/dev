@@ -1,4 +1,4 @@
-# Aula 01: técnicas de programação IMPACTA 8 e 9 de Agosta de 2024
+# Aula 01: técnicas de programação IMPACTA 8 de Agosto de 2024
 # Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)
 
 # Revisão: Estruturas de controle
