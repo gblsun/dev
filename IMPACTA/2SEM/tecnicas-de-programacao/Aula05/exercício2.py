@@ -1,3 +1,6 @@
+# Aula: técnicas de programação IMPACTA 22 de Agosto de 2024
+# Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)
+
 """ 
 Crie um programa em Python que simule o seguinte cenário: durante as Olimpíadas, uma pesquisa foi realizada com 100 pessoas para saber quais esportes olímpicos eles assistiram. Os esportes incluídos na pesquisa foram: judô, vôlei de praia, ginástica e surfe. As respostas foram compiladas, e agora você tem conjuntos de pessoas que assistiram a cada um desses esportes. Calcule a probabilidade de que uma pessoa sorteada aleatoriamente tenha assistido:
 
