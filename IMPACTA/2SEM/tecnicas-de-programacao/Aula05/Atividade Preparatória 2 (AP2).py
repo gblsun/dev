@@ -1,4 +1,4 @@
-# Aula: técnicas de programação IMPACTA 22 de Agosto de 2024
+# Aula: técnicas de programação IMPACTA 21 de Agosto de 2024
 # Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)
 
 """ 
