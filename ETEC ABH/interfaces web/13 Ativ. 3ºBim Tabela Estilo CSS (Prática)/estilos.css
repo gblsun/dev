@@ -1,0 +1,17 @@
+table{
+    width: 1200px; /* Define a largura da tabela */
+}
+th,td {
+    border: 1px solid #000; /* Define borda nas células*/
+    padding: 10px; /*Altura da Linha */
+    text-align: center;
+}
+table thead {
+    background-color: #00ff00
+}
+table tbody {
+    background-color: #ff0000;
+}
+tbody tr:hover{ /* Marca a linha */
+    background-color: #eee;
+}
