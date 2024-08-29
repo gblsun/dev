@@ -18,7 +18,7 @@ Se o nome não é encontrado no primeiro(a) professor(a), a função se chama re
 
 """
 
-
+# corrigir!!!!!
 def listar_disciplinas(professores, nome_professor):
     lista_vazia = set()
     if len(professores) == 0:
