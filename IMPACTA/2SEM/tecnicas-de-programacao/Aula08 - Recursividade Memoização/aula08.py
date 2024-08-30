@@ -114,7 +114,8 @@ def fatorial_sem_cache(valor):
 Observação de aula:
 Google Chrome
     -Ctrl + Shift + i 
-        
+        Networking
+            Preserve log
 
 Exercícios:
 
@@ -176,6 +177,8 @@ print(fibonacci_com_cache(10))
 4. Pense em formas para comparar o desempenho das duas funções. '''
 # %% Comparação de desempenho de duas funções
 
+# CORRIGIR! ----------------------------------------
+
 # <----------- fibonacci_com_dicionário ----------->
 n = {}
 
@@ -185,9 +188,9 @@ def fibonacci_com_dicionário(n):
     elif n == 2:
         return (1)
     else:
-        return(fibonacci_com_dicionário(n-1)+ fibonacci_com_dicionário(n-2))
+        return (fibonacci_com_dicionário(n-1)+ fibonacci_com_dicionário(n-2))
 
-print(fibonacci_com_dicionário(100))
+print(fibonacci_com_dicionário(10))
 
 # <----------- fibonacci_com_cache ----------->
 from functools import lru_cache
@@ -199,22 +202,67 @@ def fibonacci_com_cache(n):
     elif n == 2:
         return (1)
     else:
-        return(fibonacci_com_cache(n-1)+ fibonacci_com_cache(n-2))
+        return (fibonacci_com_cache(n-1) + fibonacci_com_cache(n-2))
     
-print(fibonacci_com_cache(100))
+print(fibonacci_com_cache(10))
 
 import time
 
 # Medindo o tempo de execução da função fibonacci_com_cache
 start_time = time.time()
-fibonacci_com_cache(100)
+fibonacci_com_cache(10)
 end_time = time.time()
 print(f"Tempo de execução da função fibonacci_com_cache: {end_time - start_time} segundos")
 
 # Medindo o tempo de execução da função fibonacci_com_cache
 start_time = time.time()
-fibonacci_com_cache(100)
+fibonacci_com_cache(10)
 end_time = time.time()
 print(f"Tempo de execução da função fibonacci_com_cache: {end_time - start_time} segundos")
+
+
+# %% código do Professor:
+
+from functools import lru_cache
+from time import time,time_ns
+
+
+def fib_sem_memoizacao(n):
+    if n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fib_sem_memoizacao(n-1)+fib_sem_memoizacao(n-2)
+
+@lru_cache
+def fib_com_memoizacao(n):
+    if n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fib_com_memoizacao(n-1)+fib_com_memoizacao(n-2)
+
+'''
+Este trecho de código está comparando o tempo de execução de duas funções que calculam o Fibonacci
+sequência com e sem memórias.Aqui está um colapso do que cada parte faz:'''
+
+print("\nTempo de execução sem memoização")
+for i in range(5):
+    inicio = time()
+    fib_sem_memoizacao(35)
+    fim = time()
+    duracao = round(fim-inicio,2)
+    print(f'A {i+1}ª execução demorou {duracao} segundos')
+
+print("\nTempo de execução com memoização")
+fib_com_memoizacao.cache_clear()
+for i in range(5):
+    inicio = time_ns()
+    fib_com_memoizacao(35)
+    fim = time_ns()
+    duracao = fim-inicio
+    print(f'A {i+1}ª execução demorou {duracao} nanossegundos')
 # %% --end
 
