@@ -1,4 +1,4 @@
-# Aula 7: técnicas de programação IMPACTA 30 de Agosto de 2024
+# Aula 8: técnicas de programação IMPACTA 30 de Agosto de 2024
 # Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)
 
 # Recursividade Memoização
@@ -109,5 +109,56 @@ def fatorial_sem_cache(valor):
         return 1
     else:
         return valor * fatorial_sem_cache(valor - 1)
+    
+'''
+Observação de aula:
+Google Chrome
+    -Ctrl + Shift + i 
+        
 
+Exercícios:
+
+1. Quais problemas o uso do cacheamento e memoização podem acarretar?
+    1.Data de validade de função pura ou seja, perigo de o Cache ficar obsoleto e desatualização de Cache;
+    2.Superlotamento de Cache, o cache pode lotar seu armazenamento;
+
+2. Como poderíamos comparar o desempenho de uma função com e sem memoização?
+    Tempo de resposta.
+        Mais rápido, porém isso pode varias de hardware para hardware.
+    Custo computacional. 
+        Foi usado menos memória e menos instruções. Mais econômico e mais vantajoso.
+
+3. Aplique a técnica de memoização na função recursiva que usamos para calcular o n-ésimo termo da sequência de Fibonacci, inicialmente com dicionário e, posteriormente, com lru_cache'''
+# %% Sequência de fibonacci
+'''
+função feita na Aula 6: técnicas de programação IMPACTA 23 de Agosto de 2024
+Crie uma função fib(n) que retorna o n-ésimo número da sequência de Fibonacci.
+'''
+
+def fib(n):
+    if n == 1:
+        return (0)
+    elif n == 2:
+        return (1)
+    else:
+        return(fib(n-1)+ fib(n-2))
+
+print(fib(10))
+
+# %% Sequência de Fibonacci com memoização
+from functools import lru_cache
+
+@lru_cache
+def fibonacci_com_cache(n):
+    if n == 1:
+        return (0)
+    elif n == 2:
+        return (1)
+    else:
+        return(fibonacci_com_cache(n-1)+ fibonacci_com_cache(n-2))
+    
+print(fibonacci_com_cache(10))
+'''
+4. Pense em formas para comparar o desempenho das duas funções. '''
 # %% --end
+
