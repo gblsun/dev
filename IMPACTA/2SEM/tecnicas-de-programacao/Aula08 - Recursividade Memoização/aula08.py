@@ -145,7 +145,21 @@ def fib(n):
 
 print(fib(10))
 
-# %% Sequência de Fibonacci com memoização
+# %% Sequência de fibonacci com dicionário
+
+n = {}
+
+def fibonacci_com_dicionário(n):
+    if n == 1:
+        return (0)
+    elif n == 2:
+        return (1)
+    else:
+        return(fibonacci_com_dicionário(n-1)+ fibonacci_com_dicionário(n-2))
+
+print(fibonacci_com_dicionário(10))
+
+# %% Sequência de Fibonacci com memoização com lru_cache
 from functools import lru_cache
 
 @lru_cache
@@ -160,5 +174,47 @@ def fibonacci_com_cache(n):
 print(fibonacci_com_cache(10))
 '''
 4. Pense em formas para comparar o desempenho das duas funções. '''
+# %% Comparação de desempenho de duas funções
+
+# <----------- fibonacci_com_dicionário ----------->
+n = {}
+
+def fibonacci_com_dicionário(n):
+    if n == 1:
+        return (0)
+    elif n == 2:
+        return (1)
+    else:
+        return(fibonacci_com_dicionário(n-1)+ fibonacci_com_dicionário(n-2))
+
+print(fibonacci_com_dicionário(100))
+
+# <----------- fibonacci_com_cache ----------->
+from functools import lru_cache
+
+@lru_cache
+def fibonacci_com_cache(n):
+    if n == 1:
+        return (0)
+    elif n == 2:
+        return (1)
+    else:
+        return(fibonacci_com_cache(n-1)+ fibonacci_com_cache(n-2))
+    
+print(fibonacci_com_cache(100))
+
+import time
+
+# Medindo o tempo de execução da função fibonacci_com_cache
+start_time = time.time()
+fibonacci_com_cache(100)
+end_time = time.time()
+print(f"Tempo de execução da função fibonacci_com_cache: {end_time - start_time} segundos")
+
+# Medindo o tempo de execução da função fibonacci_com_cache
+start_time = time.time()
+fibonacci_com_cache(100)
+end_time = time.time()
+print(f"Tempo de execução da função fibonacci_com_cache: {end_time - start_time} segundos")
 # %% --end
 
