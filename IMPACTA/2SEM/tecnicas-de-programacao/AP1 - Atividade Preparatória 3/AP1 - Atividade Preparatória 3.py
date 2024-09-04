@@ -1,6 +1,15 @@
-# %%
+"""
+<------->x<------->x<------->x<------->
+|   AP1 - Atividade Preparatória 3    |
+|       Gabriel Muchon Pavanelli      |
+<------->x<------->x<------->x<------->
+"""
+
+# %% --begin
 # imports
 # TODO: inclua aqui os imports (se necessário)
+# from functools import lru_cache --------> não consegui utilizar do @lru_cache ;(
+
 
 
 # funções
@@ -18,17 +27,18 @@ Se o nome não é encontrado no primeiro(a) professor(a), a função se chama re
 
 """
 
-# corrigir!!!!!
+
 def listar_disciplinas(professores, nome_professor):
-    lista_vazia = set()
     if len(professores) == 0:
-        return lista_vazia
+        return []
     else:
-        if 
-        professores["nome"] == nome_professor:
-            print(professores["disciplinas['nome_disciplina']"])
+        if professores[0]["nome"] == nome_professor:
+            return [
+                disciplina["nome_disciplina"]
+                for disciplina in professores[0]["disciplinas"]
+            ]
         else:
-            return professores.pop[0] 
+            return listar_disciplinas(professores[1:], nome_professor)
 
 
 # programa principal
@@ -115,9 +125,14 @@ professores = [
     },
 ]
 
+procurar = input('Digite o nome do professor que deseja procurar: ')
+disciplina =  listar_disciplinas(professores, procurar)
+print(disciplina)
+
+print('\ntestes')
 print(
     listar_disciplinas(professores, "João Silva")
 )  # ['Análise e Projeto de Algoritmos', 'Algoritmos e Estruturas de Dados']
 print(listar_disciplinas(professores, "Vitor Furlan"))  # professor(a) não encontrado(a)
 
-# %%
+# %% --end
