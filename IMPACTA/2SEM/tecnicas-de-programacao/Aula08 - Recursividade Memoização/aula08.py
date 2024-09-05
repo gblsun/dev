@@ -243,6 +243,7 @@ def fib_com_memoizacao(n):
         return 1
     else:
         return fib_com_memoizacao(n-1)+fib_com_memoizacao(n-2)
+    
 
 '''
 Este trecho de código está comparando o tempo de execução de duas funções que calculam o Fibonacci
