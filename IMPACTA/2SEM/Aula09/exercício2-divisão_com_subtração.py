@@ -15,7 +15,27 @@ retorna o resultado da divisão inteira de m por n.
 
 Neste exercício, não se pode recorrer às operações aritméticas de multiplicação, divisão e resto da divisão inteira.
 
+
+execute em:
+https://pythontutor.com/render.html#mode=display
+para melhor compreensão da funcionalidade recursiva 
 """
+
+# %% função não recursiva 
+
+# imports
+
+# funções
+
+def div(m, n):
+    contador = 0
+    while m >= n:
+        m -= n
+        contador += 1
+    return contador
+
+# Programa principal
+print(div(10, 2))  # Saída esperada: 5
 
 # %% --begin
 # imports
@@ -35,6 +55,6 @@ def div(m, n):
         # return contador
 
 # programa principal
-print(div(10,3))
+print(div(10,2))
 
-# %% --end
+# %%
