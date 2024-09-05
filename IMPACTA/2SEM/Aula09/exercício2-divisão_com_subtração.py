@@ -22,6 +22,7 @@ Neste exercício, não se pode recorrer às operações aritméticas de multipli
 from functools import lru_cache
 
 # funções
+@lru_cache
 def div(m, n):
     if m < n: 
         return 0
@@ -34,6 +35,6 @@ def div(m, n):
         # return contador
 
 # programa principal
-print(div(10, 3))
+print(div(10,3))
 
 # %% --end
