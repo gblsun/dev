@@ -22,7 +22,7 @@ def soma_nat(n):
         return 1
     else:
         return n + soma_nat(n - 1)
-    
+
 # programa principal
 print(soma_nat(5)) # 5+4+3+2+1 = 15
 print(soma_nat(10)) # 10+9+8+7+6+5+4+3+2+1 = 55
