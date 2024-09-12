@@ -1,8 +1,10 @@
 '''
-<------------------>+<------------------>-<------------------>+=<------------------>+
-|Aula 11: técnicas de programação IMPACTA 12 de Setembro de 2024                    |
-|Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)      |
-<------------------>+<------------------>-<------------------>+=<------------------>+
+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
+|                                                                                      |
+| Aula 11: técnicas de programação IMPACTA 12 de Setembro de 2024                      |
+| Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)        |
+|                                                                                      |
+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
 
 Bibliotecas 
     em
