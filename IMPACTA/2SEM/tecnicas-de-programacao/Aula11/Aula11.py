@@ -46,6 +46,31 @@ Bibliotecas em python
     ↳ De terceiros: geralmente instaladas via pip;
 
     ↳ Próprias;
+    
+Analisando os módulos
+
+
+Listando módulos disponíveis no escopo:
+
+>> dir()
+
+>> import math
+
+>> dir()
+
+Obtendo o arquivo associado a um módulo:
+
+>> import turtle
+
+>> turtle.__file__
+
+Analisando os módulos
+
+→ Todo arquivo Python contendo definições e declarações é um módulo
+
+→ O nome do módulo é o próprio nome do arquivo (sem a extensão .py)
+
+→ Para obter o nome do módulo, utilizamos <modulo>.__name__
 '''
 
 # %%
