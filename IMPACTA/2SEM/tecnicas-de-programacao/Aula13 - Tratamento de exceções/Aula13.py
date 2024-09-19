@@ -86,8 +86,7 @@ Importante para garantir que a aplicação ou programa continue funcionando ao e
 → O tratamento de exceções em Python é feito com o bloco try-except
     ↳ Trecho de código do bloco try é executado;
     ↳ Uma falha redireciona a execução para o bloco except e, posteriormente, o bloco finally (opcional) é executado;
-    ↳ Se não ocorrer falha, o bloco else (opcional) e, posteriormente, o bloco finally, são executados.
-'''
+    ↳ Se não ocorrer falha, o bloco else (opcional) e, posteriormente, o bloco finally, são executados.'''
 # %% 
 try:
     # código suscetível a falha
@@ -115,9 +114,7 @@ finally:
 
 '''
 → Um único bloco de código pode gerar diferentes tipos de falha
-→ Utiliza-se múltiplos blocos except
-
-'''
+→ Utiliza-se múltiplos blocos except'''
 # %%
 from paciente import Paciente, NameIsEmptyError 
 try:
@@ -156,12 +153,30 @@ Lançando excessões
 → O comando raise é seguido do tipo de exceção que será gerada
 → Em Python, é possível lançar qualquer tipo de exceção
 → As exceções são organizadas em hierarquia
+
+
+hierarquia de excessões:
+https://docs.python.org/3/library/exceptions.html#exception-hierarchy
+
 → Exemplo: '''
 # %%
 def incrementa_int(n):
     if not isinstance(n, int):
         raise TypeError('n deve ser um inteiro')
     return n + 1
+
+# isinstance: serve para saber qual o tipo da variável.
+# raise (levantar), ou seja: levantar uma excessão.
+# %%
+
+# %%
+# Trecho de código seguro
+x = int(input())
+y = int(input())
+
+# Trecho de código susceptível a erro
+if y==0:
+    raise TypeError('Não pode ser dividido por zero.')
 # %%
 '''
 Propagação de exceções
@@ -195,4 +210,31 @@ if __name__ == '__main__':
     print('chamando a função principal')
     main()
     print('esse código não será executado se der erro na linha acima')
+# %%
+'''
+Criando exceções
+
+→ Além de usar as exceções embutidas do Python, o programador pode criar suas próprias exceções
+→ Basta criar uma classe que esteja na hierarquia abaixo de Exception
+→ Coloque como propriedades da exceção informações importantes do contexto no qual ela foi lançada.
+
+→ Exemplo:sistema de cadastro para clínica
+veterinária.
+→ Nova funcionalidade: criar a ficha dos animais:
+    ↳ Classe Paciente;
+    ↳ Campos preenchidos incorretamente (ex. nome do paciente em branco) geram uma exceção.'''
+# %%
+class NameIsEmptyError(Exception):
+pass
+# %%
+'''
+Exemplo: sistema de cadastro para clínica veterinária.''' 
+# %%
+class Paciente:
+    def __init__(self, nome):
+        if not isinstance(nome, str):
+            raise TypeError("'nome' inválido")
+        if nome == '':
+            raise NameIsEmptyError("'nome' é obrigatório")
+        self.nome = nome 
 # %%
