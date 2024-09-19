@@ -88,14 +88,14 @@ Importante para garantir que a aplicação ou programa continue funcionando ao e
     ↳ Uma falha redireciona a execução para o bloco except e, posteriormente, o bloco finally (opcional) é executado;
     ↳ Se não ocorrer falha, o bloco else (opcional) e, posteriormente, o bloco finally, são executados.'''
 # %% 
-try:
-    # código suscetível a falha
-except:
-    # código executado após ocorrer um erro
-else:
-    # código executado apenas se nenhum erro ocorrer
-finally:
-    # código executado sempre
+# try:
+#     # código suscetível a falha
+# except:
+#     # código executado após ocorrer um erro
+# else:
+#     # código executado apenas se nenhum erro ocorrer
+# finally:
+#     # código executado sempre
 # %%
 # Trecho de código seguro
 x = int(input())
@@ -116,17 +116,17 @@ finally:
 → Um único bloco de código pode gerar diferentes tipos de falha
 → Utiliza-se múltiplos blocos except'''
 # %%
-from paciente import Paciente, NameIsEmptyError 
-try:
-    nome = input('Digite o nome do paciente: ')
-    p = Paciente(nome)
-except TypeError:
-    print('O nome deve ser uma string')
-except NameIsEmptyError:
-    print('O nome não pode ser uma string vazia')
-except Exception as e:
-    print('Ocorreu um erro inesperado ao criar o objeto')
-    print('informações do erro:', e)
+# from paciente import Paciente, NameIsEmptyError 
+# try:
+#     nome = input('Digite o nome do paciente: ')
+#     p = Paciente(nome)
+# except TypeError:
+#     print('O nome deve ser uma string')
+# except NameIsEmptyError:
+#     print('O nome não pode ser uma string vazia')
+# except Exception as e:
+#     print('Ocorreu um erro inesperado ao criar o objeto')
+#     print('informações do erro:', e)
 # %%
 
 # %%
@@ -224,8 +224,8 @@ veterinária.
     ↳ Classe Paciente;
     ↳ Campos preenchidos incorretamente (ex. nome do paciente em branco) geram uma exceção.'''
 # %%
-class NameIsEmptyError(Exception):
-pass
+class NameIsEmptyError(Exception): 
+    pass
 # %%
 '''
 Exemplo: sistema de cadastro para clínica veterinária.''' 
