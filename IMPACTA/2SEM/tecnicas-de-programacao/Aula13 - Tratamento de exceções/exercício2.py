@@ -7,6 +7,10 @@
 |        Tratamento de excessões                                                |
 <-------------->x<-------------->x<------------->x<------------->x<------------->
 
-II. Faça uma classe que define como atributo uma lista de inteiros de 10 posições. No programa principal, peça que o usuário digite valores inteiros a fim de preencher esta lista. Não implemente nenhum tipo controle referenteao tamanho da lista, deixe que o usuário digite valores até que a entrada -1 seja digitada. Uma vez digitado o valor -1, a digitação de novos elementos deve ser interrompida. Feita toda a coleta dos dados, exiba-os em tela. Tratar as seguintes exceções: 
-    ↳ IndexError: quando o usuário informar mais que 10 valores.
-    ↳ TypeError: quando o usuário informar um valor não inteiro."""
+II. Sabemos que o algoritmo de busca binária só se aplica a sequências ordenadas. Crie uma função chamada busca_binaria. Esta função deve,inicialmente, verificar se a sequência está ordenada. Se não estiver, faça com que uma exceção personalizada UnsortedSequenceError seja lançada, com a mensagem “A sequência não está ordenada”. Se a sequência estiver ordenada, a função deve realizar a busca binária, retornando True caso o valor seja encontrado e False caso contrário. Utilize o programa principal abaixo para testar.
+
+sequencia1 = [10,20,30,40,50]
+sequencia2 = [20,30,10,50,40]
+
+print(busca_binaria(sequencia1,30)) #True
+print(busca_binaria(sequencia2,30)) #UnsortedSequenceError: A sequência não está ordenada"""
