@@ -1,4 +1,11 @@
-def soma ():
-    quant = input("Digite quantos numeros quer somar")
-    resultado = 0
-    num1 = int(input("Digite o primeiro numero"))
+def soma (a,b):
+    return a+b
+
+def subtracao (a,b):
+    return a-b
+
+def multiplicacao (a,b):
+    return a*b
+
+def divisao (a,b):
+    return a/b
