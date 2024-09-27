@@ -7,9 +7,38 @@
 <--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
 → 
 ↳
-Qual é o custo computacional (de acordo com a
-notação Big O) de uma função que implementa o
-algoritmo de busca binária?
-● A resposta anterior depende dos valores passados
-para os parâmetros da função?
+→ Qual é o custo computacional (de acordo com a notação Big O) de uma função que implementa o algoritmo de busca binária?
+→ A resposta anterior depende dos valores passados para os parâmetros da função?
 '''
+
+# %% ---> begin
+# imports
+
+# funções
+def busca_binaria(lista, valor):
+    inicio = 0
+    fim = len(lista) - 1
+    passos=0
+    while inicio <= fim:
+        passos+=1
+        meio = (inicio + fim) // 2 
+
+        if lista[meio] == valor:
+            return meio, passos
+        
+        elif lista[meio] > valor:
+            fim = meio - 1
+        
+        else:
+            inicio = meio + 1
+
+    return -1, passos
+
+
+# programa principal
+# TODO: criar diferentes sequências, todas ordenadas, com tamanhos distintos
+# TODO: busca binaria por um valor que não está presente na sequência
+# Traçar um gráfico len(lista)x quantidade de passos
+    
+
+# %% ---> end
