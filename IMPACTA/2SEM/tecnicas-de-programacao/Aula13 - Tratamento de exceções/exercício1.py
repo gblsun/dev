@@ -11,3 +11,31 @@ I. Crie um programa que peça ao usuário valores inteiros a fim de preencher um
 
     ↳ IndexError: quando o usuário informar mais que 10 valores.
     ↳ TypeError: quando o usuário informar um valor não inteiro."""
+
+# imports
+# funções
+def coletar_valores():
+    # Inicializa a lista para armazenar os valores
+    valores = []
+
+    print("Digite até 10 valores inteiros (digite -1 para encerrar):")
+
+    while len(valores) < 10:
+        # Solicita um valor ao usuário
+        valor = int(input(f"Valor {len(valores) + 1}: "))
+        
+        # Verifica se o valor é -1 para encerrar a coleta
+        if valor == -1:
+            break
+        
+        # Adiciona o valor à lista
+        valores.append(valor)
+
+    # Exibe os valores coletados
+    print("\nValores digitados:")
+    for v in valores:
+        print(v)
+
+# programa principal
+# Chama a função para coletar e exibir os valores
+coletar_valores()
