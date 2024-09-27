@@ -40,10 +40,15 @@ def busca_binaria(lista, valor):
 
     return -1, passos
 
-def criar_lista_aleatoria(tamanho, inicio, fim):
-    lista = [random.randint(inicio, fim) for _ in range(tamanho)]
-    return lista
+tamanhos = [10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000, 7500, 10000]
+resultados = {}
 
+for tamanho in tamanhos:
+    lista = sorted(random.sample(range(1, 2 * tamanho), tamanho))
+    item_procurado = max(lista) + 1
+
+    _, passos = busca_binaria(lista, item_procurado)
+    resultados[tamanho] = passos
 
 # programa principal
 # TODO: criar diferentes sequências, todas ordenadas, com tamanhos distintos
