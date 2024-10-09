@@ -6,8 +6,6 @@
 | Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)        |
 |                                                                                      |
 <--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
-→ 
-↳
 
 
 O objetivo deste exercício é implementar duas abordagens para calcular a sequência de Fibonacci: uma abordagem recursiva e outra iterativa. Em seguida, você irá avaliar empiricamente a complexidade de cada algoritmo, contando o número de iterações ou chamadas realizadas durante a execução.
