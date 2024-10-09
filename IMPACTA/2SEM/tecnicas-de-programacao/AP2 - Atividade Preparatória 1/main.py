@@ -95,6 +95,11 @@ plt.plot(n_values, list(resultados_recursivo.values()), label='Recursivo', marke
 plt.plot(n_values, list(resultados_memoizacao.values()), label='Recursivo (com Memoização)', marker='x')
 plt.plot(n_values, list(resultados_iterativo.values()), label='Iterativo', marker='s')
 
+# -----> outro estilo <-----
+# plt.plot(n_values, list(resultados_recursivo.values()), label='Recursivo', color=colors[0], marker='o', linewidth=2, markersize=8)
+# plt.plot(n_values, list(resultados_memoizacao.values()), label='Recursivo (com Memoização)', color=colors[1], marker='x', linewidth=2, markersize=8)
+# plt.plot(n_values, list(resultados_iterativo.values()), label='Iterativo', color=colors[2], marker='s', linewidth=2, markersize=8)
+
 # Configurando o gráfico
 plt.xlabel('n')
 plt.ylabel('Número de Chamadas/Iterações')
@@ -104,9 +109,9 @@ plt.grid(True)
 
 colors = ['#FF4500', '#4169E1', '#FFA500'] 
 
-plt.plot(n_values, list(resultados_recursivo.values()), label='Recursivo', color=colors[0], marker='o', linewidth=2, markersize=8)
-plt.plot(n_values, list(resultados_memoizacao.values()), label='Recursivo (com Memoização)', color=colors[1], marker='x', linewidth=2, markersize=8)
-plt.plot(n_values, list(resultados_iterativo.values()), label='Iterativo', color=colors[2], marker='s', linewidth=2, markersize=8)
+# plt.plot(n_values, list(resultados_recursivo.values()), label='Recursivo', color=colors[0], marker='o', linewidth=2, markersize=8)
+# plt.plot(n_values, list(resultados_memoizacao.values()), label='Recursivo (com Memoização)', color=colors[1], marker='x', linewidth=2, markersize=8)
+# plt.plot(n_values, list(resultados_iterativo.values()), label='Iterativo', color=colors[2], marker='s', linewidth=2, markersize=8)
 
 plt.title('Comparação de Complexidade entre Abordagens de Fibonacci', fontsize=18, fontweight='bold', pad=20)
 plt.xlabel('n', fontsize=14, labelpad=15)
