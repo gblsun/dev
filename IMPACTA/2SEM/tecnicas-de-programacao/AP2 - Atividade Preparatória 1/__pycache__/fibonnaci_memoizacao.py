@@ -1,4 +1,7 @@
+from functools import lru_cache
+
 chamadas_recursivas = 0
+@lru_cache
 def fibonacci_recursivo(n):
     global chamadas_recursivas # Indica que estamos usando a variável global 'chamadas'
     chamadas_recursivas += 1 # Incrementa a contagem de chamadas
