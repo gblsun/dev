@@ -13,7 +13,7 @@ Selection sort faz apenas duas comparções; -operações ,-tempo, -custo comput
 ## III. Um algoritmo de ordenação é dito estável quando preserva a ordem relativa de elementos iguais. Entre bubble sort, selection sort e insertion sort, qual dos algoritmos não é estável?
 Resposta :
 
-O algoritmo de ordenação Selection sort não preserva a ordem relativa de elementos iguais. Portanto é um algoritmo de ordenação instável.
+- O algoritmo de ordenação Selection sort não preserva a ordem relativa de elementos iguais. Portanto é um algoritmo de ordenação instável.
 
-O algoritmo de ordenação insertion sort preserva a ordem relativa de elementos iguais. Portanto é um algoritmo de ordenação estável.
+- O algoritmo de ordenação insertion sort preserva a ordem relativa de elementos iguais. Portanto é um algoritmo de ordenação estável.
 

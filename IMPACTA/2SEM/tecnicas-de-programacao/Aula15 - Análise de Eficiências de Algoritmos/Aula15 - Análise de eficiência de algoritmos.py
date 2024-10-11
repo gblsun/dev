@@ -5,8 +5,6 @@
 | Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)        |
 |                                                                                      |
 <--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
-→ 
-↳
 
 Análise de eficiência
     de algoritmos
