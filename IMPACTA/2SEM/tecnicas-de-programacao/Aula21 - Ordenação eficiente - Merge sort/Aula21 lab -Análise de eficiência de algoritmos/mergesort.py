@@ -27,6 +27,6 @@ def merge_sort(lista):
     return combinar_subvetores(subvetor_esquerdo, subvetor_direito)
 
 
-# Programa principal
-v = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-print(merge_sort(v))
+# # Programa principal
+# v = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+# print(merge_sort(v))

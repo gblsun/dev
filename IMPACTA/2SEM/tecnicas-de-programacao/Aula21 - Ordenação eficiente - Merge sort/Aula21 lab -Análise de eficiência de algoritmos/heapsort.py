@@ -38,7 +38,7 @@ def heap_sort(lista):
         refazer_heap_maximo(lista, i, 0)
 
 
-# Programa principal
-lista = [12, 11, 13, 5, 6, 7]
-heap_sort(lista)
-print("lista ordenada:", lista)
+# # Programa principal
+# lista = [12, 11, 13, 5, 6, 7]
+# heap_sort(lista)
+# print("lista ordenada:", lista)
