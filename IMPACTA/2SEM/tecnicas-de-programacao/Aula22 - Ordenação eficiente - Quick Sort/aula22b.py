@@ -13,6 +13,10 @@ particionamento: particiona o vetor
 quick_sort: repete recursivamente a operação de particionamento para cada subvetor gerado
 
 '''
+# função troca
+def troca(lista, i, j):
+    lista[i], lista[j] = lista[j], lista[i]
+
 # função particionamento
 def particiona(lista, inicio, fim):
     pivo = lista[inicio]
@@ -30,7 +34,7 @@ def quick_sort(lista, inicio, fim):
         posicao = particiona(lista, inicio, fim)
         quick_sort(lista, inicio, posicao - 1)
         quick_sort(lista, posicao + 1, fim)
-Exemplo de uso:
+# Exemplo de uso:
     
 lista = [4, 2, 3, 5, 6, 9]
 quick_sort(lista, 0, len(lista) - 1)
