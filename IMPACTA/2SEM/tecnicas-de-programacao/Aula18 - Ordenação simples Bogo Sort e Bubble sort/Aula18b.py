@@ -37,5 +37,5 @@ def bubble_sort(s):
         
 lista = [40, 30, 20, 50, 10]
 bubble_sort(lista)
-
+print(lista)
 # %%
