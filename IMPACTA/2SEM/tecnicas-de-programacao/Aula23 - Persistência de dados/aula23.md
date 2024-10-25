@@ -1,3 +1,7 @@
+<!-- 
+Aula 19: técnicas de programação IMPACTA 11 de Outubro de 2024
+Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)  
+ -->
 # Persistência de dados
 
 ## Histórico
