@@ -1,0 +1,3 @@
+# Exercícios
+1. A mediana é uma medida de tendência central útil para conjuntos de dados com outliers (valores extremos, que podem não fazer sentido). Implemente a função mediana(lista) que retorna a mediana dos valores de uma lista utilizando o algoritmo quick select.
+2. O Min-Max Scaler é uma técnica de normalização muito utilizada em análise e ciência de dados. Esta técnica transforma os dados para que fiquem em uma escala específica (geralmente entre 0 e 1) sem alterar a distribuição relativa dos valores. Implemente uma função min_max_scaller(lista) que normaliza os dados da lista para valores entre 0 e 1 sem alterar sua distribuição.
