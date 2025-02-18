@@ -1,0 +1,33 @@
+
+th {
+    border: 01px solid #000; /* Define borda nas células*/
+    padding: 5px; /*Altura da Linha */
+    text-align: center;
+    width: 200px;
+}
+table thead {
+    background-color:#04726cfa ;
+}
+
+thead th:hover{ /* Marca a linha */
+    background-color:#EEE;
+}
+
+.red{
+    color:red;
+}
+td{
+   width: 200px;
+   padding: 5px; /*Altura da Linha */
+   text-align: center;
+   width: 400px;
+   height: 400px;
+   vertical-align: top; 
+}
+
+table{
+    width: 1200px; /* Define a largura da tabela */
+    border: 1px solid #000; /* Define borda nas células*/
+    
+   }
+
