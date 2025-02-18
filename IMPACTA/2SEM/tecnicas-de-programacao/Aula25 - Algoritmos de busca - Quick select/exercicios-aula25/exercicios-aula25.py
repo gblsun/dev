@@ -1,3 +1,4 @@
+# %%
 # imports
 import random
 
@@ -33,13 +34,23 @@ def quick_select(lista, k, inicio=0, fim=None):
 
     return None
 
+# Função quick_sort
+def quick_sort(lista, inicio, fim):
+    if inicio < fim:
+        posicao = particiona(lista, inicio, fim)
+        quick_sort(lista, inicio, posicao - 1)
+        quick_sort(lista, posicao + 1, fim)
+
 # Função mediana
 def mediana (lista):
     k = len(lista)//2
-    mediana = quick_select(lista)
-
+    mediana = quick_select(lista,k)
+    return mediana
 
 # programa principal
 lista = random.sample(range(1, 101), 10)
+
 print("Lista desordenada:", lista)
+quick_sort(lista, 0, len(lista)-1) 
+print(lista)
 print(mediana(lista))
