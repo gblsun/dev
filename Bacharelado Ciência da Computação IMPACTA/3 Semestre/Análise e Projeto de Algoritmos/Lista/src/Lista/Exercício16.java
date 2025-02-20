@@ -12,11 +12,12 @@ import java.util.Scanner;
 public class Exercício16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o número de cigarro: ");
+        System.out.printf("Digite o número de cigarro que você fuma por dia: ");
         int n = sc.nextInt();
-        System.out.println("Digite o número de anos que fumou na vida: ");
+        System.out.printf("Digite o número de anos que fumou na vida: ");
         int ano = sc.nextInt();
+        int minutosAno = (60*(24*365));
+        System.out.println("Você perdeu: "+ ((((minutosAno*n)/10)/60)/24) + " dias de vida");
         sc.close();
-
     }
 }
