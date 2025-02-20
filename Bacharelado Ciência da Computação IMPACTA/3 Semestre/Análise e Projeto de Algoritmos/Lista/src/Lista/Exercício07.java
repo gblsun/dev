@@ -1,6 +1,6 @@
 /* Exercício 7 - Desenvolvido por Gabriel Muchon Pavanelli. Faculdade Impacta 18/02/2025.
 
-7 Crie um programa em Python que leia um número real e mostre na tela o seu dobro e a
+7 - Crie um programa em Python que leia um número real e mostre na tela o seu dobro e a
 sua terça parte.
 Ex: Digite um número: 3.5
 O dobro de 3.5 é 7.0
