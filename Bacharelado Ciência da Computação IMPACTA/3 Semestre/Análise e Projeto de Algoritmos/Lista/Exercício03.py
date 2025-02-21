@@ -10,5 +10,5 @@ O funcionário Maria do Carmo tem um salário de R$1850,45 em Junho.
 """
 
 nome = input("Nome do funcionário: ")
-Salario = float(input("Salário"))
+salario = float(input("Salário: "))
 print(f"O funcionário {nome} tem um salário de R${salario:.2f} em junho.")
