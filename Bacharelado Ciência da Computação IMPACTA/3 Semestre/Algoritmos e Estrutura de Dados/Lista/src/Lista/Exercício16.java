@@ -16,8 +16,8 @@ public class Exercício16 {
         int n = sc.nextInt();
         System.out.printf("Digite o número de anos que fumou na vida: ");
         int ano = sc.nextInt();
-        int minutosAno = (60*(24*365));
-        System.out.println("Você perdeu: "+ ((((minutosAno*n)/10)/60)/24) + " dias de vida");
+        int minutosAno = (60 * (24 * 365));
+        System.out.println("Você perdeu: " + ((((minutosAno * n) / 10) / 60) / 24) + " dias de vida");
         sc.close();
     }
 }
