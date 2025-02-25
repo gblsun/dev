@@ -1,0 +1,168 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Variaveis",
+            "request": "launch",
+            "mainClass": "Exemplos.Variaveis",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "exercicio04",
+            "request": "launch",
+            "mainClass": "Exemplos.exercicio04",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "media",
+            "request": "launch",
+            "mainClass": "Exemplos.media",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "media2",
+            "request": "launch",
+            "mainClass": "Exemplos.media2",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio02",
+            "request": "launch",
+            "mainClass": "Lista.Exercicio02",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio05",
+            "request": "launch",
+            "mainClass": "Lista.Exercicio05",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio06",
+            "request": "launch",
+            "mainClass": "Lista.Exercicio06",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio1",
+            "request": "launch",
+            "mainClass": "Lista.Exercicio1",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício03",
+            "request": "launch",
+            "mainClass": "Lista.Exercício03",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício03Melhorado",
+            "request": "launch",
+            "mainClass": "Lista.Exercício03Melhorado",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício07",
+            "request": "launch",
+            "mainClass": "Lista.Exercício07",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício07_2",
+            "request": "launch",
+            "mainClass": "Lista.Exercício07_2",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício08",
+            "request": "launch",
+            "mainClass": "Lista.Exercício08",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício09",
+            "request": "launch",
+            "mainClass": "Lista.Exercício09",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício10",
+            "request": "launch",
+            "mainClass": "Lista.Exercício10",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício11",
+            "request": "launch",
+            "mainClass": "Lista.Exercício11",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício12",
+            "request": "launch",
+            "mainClass": "Lista.Exercício12",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício13",
+            "request": "launch",
+            "mainClass": "Lista.Exercício13",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício14",
+            "request": "launch",
+            "mainClass": "Lista.Exercício14",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício15",
+            "request": "launch",
+            "mainClass": "Lista.Exercício15",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Exercício16",
+            "request": "launch",
+            "mainClass": "Lista.Exercício16",
+            "projectName": "github_3b992505"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "github_3b992505"
+        }
+    ]
+}
