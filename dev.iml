@@ -3,6 +3,8 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Bacharelado Ciência da Computação IMPACTA/3 Semestre/Algoritmos e Estrutura de Dados" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bacharelado Ciência da Computação IMPACTA/3 Semestre/Análise e Projeto de Algoritmos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bacharelado Ciência da Computação IMPACTA/3 Semestre/Análise e Projeto de Algoritmos/Lista/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />

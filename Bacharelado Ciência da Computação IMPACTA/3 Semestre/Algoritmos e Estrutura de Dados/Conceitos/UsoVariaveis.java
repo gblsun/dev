@@ -1,3 +1,5 @@
+package Conceitos;
+
 import java.util.Scanner;
 
 public class UsoVariaveis {
@@ -15,3 +17,15 @@ public class UsoVariaveis {
 
     }
 }
+
+/**
+ * Tipos de variáveis que vamos aprender ao longo do curso
+ * byte
+ * short
+ * int
+ * long
+ * float
+ * double
+ * char
+ * boolean
+ */
