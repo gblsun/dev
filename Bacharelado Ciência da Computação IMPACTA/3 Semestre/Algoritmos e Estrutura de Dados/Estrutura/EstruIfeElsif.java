@@ -8,34 +8,22 @@
 
  */
 
-package Conceitos;
+package Estrutura;
 
-import java.util.Scanner;
-
-public class UsoVariaveis {
+public class EstruIfeElsif {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        boolean menina = false;
+        String nome = "Gabriel Muchon Pavanelli";
+        int idade = 19;
 
-        System.out.println("Escolha entre menino ou menina ");
-        boolean escolha = sc.nextLine().equalsIgnoreCase("menina");
-        if (menina) {
-            System.out.println(" Sou Menina. ");
-        } else {
-            System.out.println(" Sou Menino. ");
+        if(idade >= 18) {
+            System.out.println("Maior de idade");
+        } else if (idade < 18) {
+            System.out.println("Menor de idade");
+        } else if (idade == 18) {
+            System.out.println("Igual a 18");
         }
-
+        else{
+            System.out.println("Você tem "+idade+" anos");
+        }
     }
 }
-
-/**
- * Tipos de variáveis que vamos aprender ao longo do curso
- * byte
- * short
- * int
- * long
- * float
- * double
- * char
- * boolean
- */

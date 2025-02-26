@@ -8,34 +8,14 @@
 
  */
 
-package Conceitos;
+package Interagindo;
 
-import java.util.Scanner;
+import javax.swing.*;
 
-public class UsoVariaveis {
+public class EstruJOptionPane {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        boolean menina = false;
-
-        System.out.println("Escolha entre menino ou menina ");
-        boolean escolha = sc.nextLine().equalsIgnoreCase("menina");
-        if (menina) {
-            System.out.println(" Sou Menina. ");
-        } else {
-            System.out.println(" Sou Menino. ");
-        }
-
+        JOptionPane.showMessageDialog(null, "olá que bom você por aqui! ");
+        String name = JOptionPane.showInputDialog("Digite seu nome:");
+        JOptionPane.showMessageDialog(null, "Bom trabalho, " + name);
     }
 }
-
-/**
- * Tipos de variáveis que vamos aprender ao longo do curso
- * byte
- * short
- * int
- * long
- * float
- * double
- * char
- * boolean
- */

@@ -7,35 +7,24 @@
 <--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
 
  */
+/**
+ *
+ *
+ * O for consiste em:
+ * Iniciar a variavél com um valor
+ * teste lógio
+ * incrementar x++ = x = x + 1
+ *
+ * Para facilitar o uso do comando
+ * System.out.println(); no Intellij IDEA
+ * digite sout e aperte a tecla TAB
+ */
+package Estrutura;
 
-package Conceitos;
-
-import java.util.Scanner;
-
-public class UsoVariaveis {
+public class EstruFor {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        boolean menina = false;
-
-        System.out.println("Escolha entre menino ou menina ");
-        boolean escolha = sc.nextLine().equalsIgnoreCase("menina");
-        if (menina) {
-            System.out.println(" Sou Menina. ");
-        } else {
-            System.out.println(" Sou Menino. ");
+        for (int x = 0; x <= 10; x++) {
+            System.out.println(x);
         }
-
     }
 }
-
-/**
- * Tipos de variáveis que vamos aprender ao longo do curso
- * byte
- * short
- * int
- * long
- * float
- * double
- * char
- * boolean
- */

@@ -8,34 +8,16 @@
 
  */
 
-package Conceitos;
+package Estrutura;
 
-import java.util.Scanner;
-
-public class UsoVariaveis {
+public class Estrudowhile {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        boolean menina = false;
+        int x = 0;
 
-        System.out.println("Escolha entre menino ou menina ");
-        boolean escolha = sc.nextLine().equalsIgnoreCase("menina");
-        if (menina) {
-            System.out.println(" Sou Menina. ");
-        } else {
-            System.out.println(" Sou Menino. ");
+        do {
+            System.out.println(x);
+            x = x + 1;
         }
-
+        while (x <= 10);
     }
 }
-
-/**
- * Tipos de variáveis que vamos aprender ao longo do curso
- * byte
- * short
- * int
- * long
- * float
- * double
- * char
- * boolean
- */

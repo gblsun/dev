@@ -8,34 +8,21 @@
 
  */
 
-package Conceitos;
+package Estrutura;
 
-import java.util.Scanner;
-
-public class UsoVariaveis {
+public class EstruIf {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        boolean menina = false;
 
-        System.out.println("Escolha entre menino ou menina ");
-        boolean escolha = sc.nextLine().equalsIgnoreCase("menina");
-        if (menina) {
-            System.out.println(" Sou Menina. ");
-        } else {
-            System.out.println(" Sou Menino. ");
+        int X = 20;
+
+        if(X == 20) {
+            System.out.println("S é igual a 20");
         }
-
+        if (X != 50){
+            System.out.println("X é diferente");
+        }
+        if (X <= 5){
+            System.out.println("X é menor ou igual a 5");
+        }
     }
 }
-
-/**
- * Tipos de variáveis que vamos aprender ao longo do curso
- * byte
- * short
- * int
- * long
- * float
- * double
- * char
- * boolean
- */
