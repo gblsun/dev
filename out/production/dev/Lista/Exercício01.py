@@ -1,3 +1,4 @@
+
 """
 Exercício 1 - Desenvolvido por Gabriel Muchon Pavanelli. Faculdade Impacta 21/02/2025.
 
