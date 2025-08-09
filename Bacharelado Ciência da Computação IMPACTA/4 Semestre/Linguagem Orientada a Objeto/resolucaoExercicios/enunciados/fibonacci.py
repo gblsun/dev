@@ -1,3 +1,11 @@
+'''
+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
+|                                                                                      |
+| Exercícios: Linguagem Orientada a objetos IMPACTA 08 de Agosto de 2025               |
+| Anotações e comentários feitos por Gabriel Muchon Pavanelli (github: gblsunn)        |
+|                                                                                      |
+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+<--x-->+
+Exercício resolvido dia 08/08/2025.'''
 # 4. Gerar a sequência de Fibonacci até um número fornecido pelo usuário
 n = int(input("Digite um valor para calcular Fibonacci: "))
 
