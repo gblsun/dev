@@ -1,6 +1,19 @@
 # Definindo a classe
 class Pessoa:
+    """
+    class → Palavra reservada do Python usada para criar classes.
+    Classe é como um molde (ou "fôrma") que define as características (atributos) e comportamentos (métodos) de um objeto.
+    Aqui criamos a classe Pessoa, que representa uma pessoa.
+    """
     def __init__(self, nome, idade):
+        """
+        def → define uma função ou método.
+        __init__ → é um método especial, chamado automaticamente quando criamos uma nova pessoa. Ele é conhecido como construtor.
+        
+        self → referência ao próprio objeto que está sendo criado.
+        (É como dizer: “essa variável nome pertence a essa pessoa específica.”)
+        nome e idade → informações que vamos passar na hora de criar a pessoa.
+        """
         self.nome = nome
         self.idade = idade
 
