@@ -15,4 +15,4 @@ erro:
 fim:
     return 0;
 }
-A
+// As vezes, o uso de "goto" pode tornar o código mais difícil de entender e manter, especialmente em programas maiores. No entanto, em casos simples como este, pode ser uma maneira rápida de lidar com erros sem a necessidade de estruturas de controle adicionais.
