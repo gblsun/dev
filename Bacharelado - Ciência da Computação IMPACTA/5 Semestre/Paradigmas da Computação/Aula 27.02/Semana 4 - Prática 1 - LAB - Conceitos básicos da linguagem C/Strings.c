@@ -16,7 +16,6 @@ int main() {
     printf("Nome: %s\n", nome);
     printf("Quantidade de letras: %lu\n", strlen(nome));
     // A função strlen é usada para calcular o comprimento da string armazenada na variável 'nome'. Ela retorna o número de caracteres presentes na string, excluindo o caractere nulo '\0' que indica o final da string. O especificador de formato '%lu' é usado para imprimir o valor retornado por strlen, que é do tipo size_t (um tipo inteiro sem sinal). Portanto, 'printf("Quantidade de letras: %lu\n", strlen(nome));' irá imprimir a mensagem "Quantidade de letras: X" no console, onde 'X' é o número de caracteres no nome inserido pelo usuário.
-
     return 0;
 }
 
