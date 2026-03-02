@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+<<<<<<< HEAD
 /* 
     Este programa demonstra a passagem de parâmetros por valor em C.
     Ele define a função 'altera', que tenta modificar o valor de um inteiro
@@ -24,6 +25,13 @@ void altera(int x){
 }
 
 int main() {
+=======
+void altera(int x) {
+    X = 50;
+}
+
+int main(){
+>>>>>>> 952b57f70d3239ae2772f6b60401799f7d488d02
     int numero = 10;
     altera(numero);
     printf("Numero: %d\n", numero);
