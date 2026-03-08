@@ -1,0 +1,13 @@
+Categorias Unicas:;;setosa
+;;versicolor
+;;virginica
+Frequência Absoluta:;setosa;50
+;versicolor;50
+;virginica;50
+Total de Linhas:;;150
+Frequência Absoluta:;setosa;0,333333333
+;versicolor;0,333333333
+;virginica;0,333333333
+Frequência Absoluta (em porcentagem %):;setosa;33,33%
+;versicolor;33,33%
+;virginica;33,33%
