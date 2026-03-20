@@ -56,11 +56,11 @@ Coleção de exercícios resolvidos da plataforma Beecrowd, com foco em:
 
 Exemplos:
 
-area-do-círculo.py
-numero_secreto.py
-media.py
-while.py
-string_01.py
+area-do-círculo.py  
+numero_secreto.py  
+media.py  
+while.py  
+string_01.py  
 
 
 ---
@@ -136,9 +136,9 @@ Este repositório não é apenas um conjunto de códigos, mas sim um reflexo de:
 
 ## Autor
 
-Gabriel Pavanelli  
-Estudante de Ciência da Computação  
-Interesses em **Tecnologia, Data Analytics e Advisory Consulting**
+Gabriel Muchon Pavanelli    
+Estudante de Ciência da Computação    
+Interesses em **Tecnologia, Data Analytics e Advisory Consulting**  
 
 ---
 
