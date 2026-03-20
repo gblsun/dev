@@ -26,7 +26,7 @@ O repositório está organizado em múltiplas pastas, cada uma representando dif
 ### Bacharelado - Ciência da Computação (IMPACTA)
 
 Conteúdos organizados por semestre, refletindo a progressão acadêmica:
-
+```
 /Bacharelado - Ciência da Computação IMPACTA/
 │
 ├── 1 Semestre/
@@ -35,7 +35,7 @@ Conteúdos organizados por semestre, refletindo a progressão acadêmica:
 ├── 4 Semestre/
 │ └── Linguagem Orientada a Objeto/
 └── 5 Semestre/
-
+```
 
 Inclui:
 - Algoritmos e lógica de programação  
@@ -68,7 +68,7 @@ string_01.py
 ### ETEC — Informática para Internet
 
 Materiais do curso técnico, com foco em desenvolvimento web e fundamentos de TI:
-
+```
 /ETEC Informática para Internet ABH/
 ├── Programação e algoritmos
 ├── Gestão e conteúdo Web
@@ -76,7 +76,7 @@ Materiais do curso técnico, com foco em desenvolvimento web e fundamentos de TI
 ├── Projetos com DreamWeaver
 ├── Projeto Criptomoeda
 └── Projeto Prático
-
+```
 
 Inclui:
 - HTML, CSS e fundamentos de front-end  
