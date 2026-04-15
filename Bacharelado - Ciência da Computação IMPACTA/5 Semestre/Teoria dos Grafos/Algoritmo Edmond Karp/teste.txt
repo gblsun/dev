@@ -1,0 +1,179 @@
+Célula 1 -Importações
+
+from collections import deque
+import networkx as nx
+import matplotlib.pyplot as plt
+import time
+from IPython.display import clear_output
+
+
+Célula 2 — BFS (busca por caminho aumentante)
+
+def bfs(capacidade, fluxo, origem, destino, pai):
+n = len(capacidade)
+visitado = [False] * n
+fila = deque()
+
+
+fila.append(origem)
+visitado[origem] = True
+pai[origem] = -1
+
+while fila:
+    u = fila.popleft()
+
+    for v in range(n):
+        if not visitado[v] and capacidade[u][v] - fluxo[u][v] > 0:
+            fila.append(v)
+            pai[v] = u
+            visitado[v] = True
+
+            if v == destino:
+                return True
+
+return False
+
+Célula 3 — Edmonds-Karp /com histórico
+
+def edmonds_karp_steps(capacidade, origem, destino):
+n = len(capacidade)
+fluxo = [[0] * n for _ in range(n)]
+pai = [-1] * n
+fluxo_maximo = 0
+
+
+steps = []
+
+while bfs(capacidade, fluxo, origem, destino, pai):
+    caminho = []
+    gargalo = float('inf')
+    v = destino
+
+    while v != origem:
+        u = pai[v]
+        caminho.append((u, v))
+        gargalo = min(gargalo, capacidade[u][v] - fluxo[u][v])
+        v = u
+
+    caminho.reverse()
+
+    steps.append({
+        "caminho": caminho.copy(),
+        "gargalo": gargalo,
+        "fluxo": [row[:] for row in fluxo]
+    })
+
+    v = destino
+    while v != origem:
+        u = pai[v]
+        fluxo[u][v] += gargalo
+        fluxo[v][u] -= gargalo
+        v = u
+
+    fluxo_maximo += gargalo
+
+return fluxo_maximo, fluxo, steps
+
+Célula 4 — Definição do grafo
+
+'''
+Mapeamento:
+S = 0, 1 = 1, 2 = 2, 3 = 3, 4 = 4, T = 5
+'''
+
+
+capacidade = [
+
+
+S  1   2   3   4   T
+
+[0, 10, 10, 0,  0,  0],  # S
+[0, 0,  2,  4,  8,  0],  # 1
+[0, 0,  0,  0,  9,  0],  # 2
+[0, 0,  0,  0,  0, 10],  # 3
+[0, 0,  0,  6,  0, 10],  # 4
+[0, 0,  0,  0,  0,  0]   # T
+
+]
+
+
+Célula 5 — Função de plotagem /com destaque
+
+def plot_step(capacidade, fluxo, caminho=None, titulo=""):
+G = nx.DiGraph()
+n = len(capacidade)
+
+
+for u in range(n):
+    for v in range(n):
+        if capacidade[u][v] > 0:
+            G.add_edge(u, v)
+
+pos = {
+    0: (-1, 0),
+    1: (0, 1),
+    2: (0, -1),
+    3: (2, 1),
+    4: (2, -1),
+    5: (3, 0)
+}
+
+edge_colors = []
+for u, v in G.edges():
+    if caminho and (u, v) in caminho:
+        edge_colors.append("red")
+    else:
+        edge_colors.append("black")
+
+nx.draw(G, pos, with_labels=True, edge_color=edge_colors)
+
+labels = {
+    (u, v): f"{fluxo[u][v]}/{capacidade[u][v]}"
+    for u, v in G.edges()
+}
+
+nx.draw_networkx_edge_labels(G, pos, edge_labels=labels)
+
+plt.title(titulo)
+plt.show()
+
+Célula 6 — Animação
+
+def animar(capacidade, steps):
+fluxo_temp = [[0]*len(capacidade) for _ in range(len(capacidade))]
+
+
+for i, step in enumerate(steps):
+    clear_output(wait=True)
+
+    caminho = step["caminho"]
+    gargalo = step["gargalo"]
+
+    print(f"Iteração {i+1}")
+    print("Caminho aumentante:", caminho)
+    print("Gargalo:", gargalo)
+
+    for u, v in caminho:
+        fluxo_temp[u][v] += gargalo
+        fluxo_temp[v][u] -= gargalo
+
+    plot_step(capacidade, fluxo_temp, caminho, f"Iteração {i+1}")
+
+    time.sleep(1.5)
+
+Célula 7 — Execução final
+
+origem = 0
+destino = 5
+
+
+fluxo_max, fluxo_final, steps = edmonds_karp_steps(capacidade, origem, destino)
+
+
+print("Fluxo máximo:", fluxo_max)
+
+
+animar(capacidade, steps)
+Iteração 4
+Caminho aumentante: [(0, 2), (2, 4), (4, 3), (3, 5)]
+Gargalo: 5
